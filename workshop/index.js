@@ -7,7 +7,9 @@
 // *******************
 
 function searchParamsToObject (url) {
-  return new URLSearchParams(url);
+ return new URLSearchParams(url);
+  
 }
 
-searchParamsToObject();
+searchParamsToObject("name=oliver&email=hello@oliverjam.es");
+
