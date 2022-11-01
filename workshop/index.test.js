@@ -6,8 +6,10 @@
 
 // *******************************
 
-test('Converts string to object', () => {
-    const result = searchParamsToObject("name=oliver&email=hello@oliverjam.es").email;
-    const expected = 'hello@oliverjam.es';
-    equal(result, expected, 'email value should be hello@oliverjam.es')
-});
+// test('Converts string to object', () => {
+//     const result = searchParamsToObject("name=oliver&email=hello@oliverjam.es").email;
+//     const expected = 'hello@oliverjam.es';
+//     equal(result, expected, 'email value should be hello@oliverjam.es')
+// });
+
+// *******************************
