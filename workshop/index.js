@@ -7,8 +7,8 @@
 // *******************
 
 function searchParamsToObject (url) {
- return new URLSearchParams(url);
-  
+ const objInstance =  new URLSearchParams(url);
+  console.log(objInstance);
 }
 
 searchParamsToObject("name=oliver&email=hello@oliverjam.es");
