@@ -18,6 +18,10 @@ test ('does not accept string', () => {
 const actual = isLeapYear('dogs with string');
 const expected = false;
 equal(actual, expected);
+})
 
-}
-)
+test ('no negative years', () => {
+const actual = isLeapYear(-1);
+const expected = false;
+equal(actual, expected);
+})

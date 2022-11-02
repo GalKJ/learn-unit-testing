@@ -31,6 +31,11 @@ function isLeapYear(year) {
     if (year === NaN) {
         console.error(year + ' is not a number');
         return false;
+    } else 
+    if (year < 0) {
+        console.error(year + ' must be a positive number');
+        return false;
+    
     } else if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
         console.log(year + ' is a leap year');
         return true;
@@ -42,4 +47,4 @@ function isLeapYear(year) {
 
 
 
-isLeapYear(year);
+// isLeapYear(2000);
