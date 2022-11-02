@@ -15,7 +15,7 @@
 //  console.log(obj.name);
 //  console.log(Object.entries(obj));
 //  console.log(typeof(obj));
-//     return obj;
+//     return [obj.email, obj.name];
 
 // }
 
@@ -30,13 +30,11 @@ function isLeapYear(year) {
     //three conditions to find out the leap year
     if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
         console.log(year + ' is a leap year');
+        return true;
     } else {
-        console.log(year + ' is not a leap year');
+        console.error(year + ' is not a leap year');
     }
 }
-
-// take input
-const year = prompt('Enter a year:');
 
 
 
