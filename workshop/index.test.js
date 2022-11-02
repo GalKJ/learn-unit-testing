@@ -14,3 +14,10 @@
 
 // *******************************
 
+test ('does not accept string', () => {
+const actual = isLeapYear('dogs with string');
+const expected = false;
+equal(actual, expected);
+
+}
+)

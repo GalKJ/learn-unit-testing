@@ -28,11 +28,15 @@
 function isLeapYear(year) {
 
     //three conditions to find out the leap year
-    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+    if (year === NaN) {
+        console.error(year + ' is not a number');
+        return false;
+    } else if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
         console.log(year + ' is a leap year');
         return true;
     } else {
         console.error(year + ' is not a leap year');
+        return false; 
     }
 }
 
